@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchievementViewController" customModule="ExerciceIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionTextView" destination="969-rK-SGw" id="NOE-QG-4gk"/>
+                <outlet property="imageAchivement" destination="SQq-Hk-4v3" id="Oon-Lk-Pjt"/>
+                <outlet property="nameLabel" destination="fF0-aM-d1V" id="0uV-YB-2Ec"/>
+                <outlet property="requirementTextView" destination="2sV-OG-YbP" id="IeY-aA-pD0"/>
+                <outlet property="view" destination="iN0-l3-epB" id="wpr-Zy-gbc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Achievement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB4-XH-lOq">
+                    <rect key="frame" x="86" y="102" width="100" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="rY2-h2-XtS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQq-Hk-4v3">
+                    <rect key="frame" x="87" y="169" width="240" height="201"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="201" id="qzz-1e-Fin"/>
+                    </constraints>
+                </imageView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="DescriptionTextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="969-rK-SGw">
+                    <rect key="frame" x="20" y="500" width="374" height="74"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="74" id="oug-fy-fxy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="RequirementTextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2sV-OG-YbP">
+                    <rect key="frame" x="20" y="599" width="374" height="153"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fF0-aM-d1V">
+                    <rect key="frame" x="20" y="396" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="969-rK-SGw" secondAttribute="trailing" constant="20" id="43m-FR-Imp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fF0-aM-d1V" secondAttribute="trailing" constant="20" id="5yz-kV-13n"/>
+                <constraint firstItem="HB4-XH-lOq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="58" id="8rK-gA-gWX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2sV-OG-YbP" secondAttribute="bottom" constant="110" id="9Di-kQ-csP"/>
+                <constraint firstItem="SQq-Hk-4v3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ia6-Gv-ZtQ"/>
+                <constraint firstItem="HB4-XH-lOq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="86" id="NgM-Xk-jLl"/>
+                <constraint firstItem="969-rK-SGw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="PfY-Cs-e9r"/>
+                <constraint firstItem="SQq-Hk-4v3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="87" id="Prd-xN-wax"/>
+                <constraint firstItem="2sV-OG-YbP" firstAttribute="top" secondItem="969-rK-SGw" secondAttribute="bottom" constant="25" id="QOo-WM-Fh8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2sV-OG-YbP" secondAttribute="trailing" constant="20" id="Qpf-zI-3UV"/>
+                <constraint firstItem="fF0-aM-d1V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="SHr-fH-pje"/>
+                <constraint firstItem="2sV-OG-YbP" firstAttribute="top" secondItem="969-rK-SGw" secondAttribute="bottom" constant="25" id="Xen-b2-IMe"/>
+                <constraint firstItem="SQq-Hk-4v3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="125" id="fpb-Fc-bRw"/>
+                <constraint firstItem="fF0-aM-d1V" firstAttribute="top" secondItem="SQq-Hk-4v3" secondAttribute="bottom" constant="26" id="ig3-8Y-l9A"/>
+                <constraint firstItem="2sV-OG-YbP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="tph-du-bfp"/>
+                <constraint firstItem="969-rK-SGw" firstAttribute="top" secondItem="fF0-aM-d1V" secondAttribute="bottom" constant="83" id="wqa-Kk-5ZX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="100.44642857142857"/>
+        </view>
+    </objects>
+</document>

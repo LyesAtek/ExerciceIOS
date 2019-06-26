@@ -33,6 +33,8 @@
 		66989DD822C42017004CF113 /* WBAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66989DD722C42017004CF113 /* WBAchievement.swift */; };
 		66989DDA22C4238E004CF113 /* CustomAchievementsTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66989DD922C4238E004CF113 /* CustomAchievementsTableCell.swift */; };
 		66989DDC22C423E1004CF113 /* CustomAchievementsTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66989DDB22C423E1004CF113 /* CustomAchievementsTableCell.xib */; };
+		66989DE022C428F5004CF113 /* AchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66989DDF22C428F5004CF113 /* AchievementViewController.xib */; };
+		66989DE222C42904004CF113 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66989DE122C42904004CF113 /* AchievementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		66989DD722C42017004CF113 /* WBAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAchievement.swift; sourceTree = "<group>"; };
 		66989DD922C4238E004CF113 /* CustomAchievementsTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAchievementsTableCell.swift; sourceTree = "<group>"; };
 		66989DDB22C423E1004CF113 /* CustomAchievementsTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomAchievementsTableCell.xib; sourceTree = "<group>"; };
+		66989DDF22C428F5004CF113 /* AchievementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementViewController.xib; sourceTree = "<group>"; };
+		66989DE122C42904004CF113 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,7 @@
 		66989DDD22C428B2004CF113 /* AchivementView */ = {
 			isa = PBXGroup;
 			children = (
+				66989DE122C42904004CF113 /* AchievementViewController.swift */,
 			);
 			path = AchivementView;
 			sourceTree = "<group>";
@@ -282,6 +287,7 @@
 		66989DDE22C428BA004CF113 /* AchivementView */ = {
 			isa = PBXGroup;
 			children = (
+				66989DDF22C428F5004CF113 /* AchievementViewController.xib */,
 			);
 			path = AchivementView;
 			sourceTree = "<group>";
@@ -392,6 +398,7 @@
 			files = (
 				668A2DA822C3A77E00E9540F /* LaunchScreen.storyboard in Resources */,
 				668A2DA522C3A77E00E9540F /* Assets.xcassets in Resources */,
+				66989DE022C428F5004CF113 /* AchievementViewController.xib in Resources */,
 				66989DDC22C423E1004CF113 /* CustomAchievementsTableCell.xib in Resources */,
 				66989DD022C41D1B004CF113 /* AchievementsViewController.xib in Resources */,
 				668A2DF122C3F0DF00E9540F /* CustomCategoriesTableViewCell.xib in Resources */,
@@ -428,6 +435,7 @@
 				66989DD822C42017004CF113 /* WBAchievement.swift in Sources */,
 				668A2DA322C3A77D00E9540F /* ExerciceIOS.xcdatamodeld in Sources */,
 				668A2DDA22C3BAEE00E9540F /* GuildWars2API.swift in Sources */,
+				66989DE222C42904004CF113 /* AchievementViewController.swift in Sources */,
 				668A2DE822C3DFBA00E9540F /* HomeViewController.swift in Sources */,
 				668A2DF322C3F0F600E9540F /* CustomCategoriesTableViewCell.swift in Sources */,
 				668A2DED22C3F05200E9540F /* WBCategory.swift in Sources */,

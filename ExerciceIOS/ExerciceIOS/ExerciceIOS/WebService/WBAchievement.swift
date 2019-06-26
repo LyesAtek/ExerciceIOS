@@ -41,7 +41,12 @@ public class WBAchievement : NSObject{
         let name = (jsonEvents as AnyObject).object(forKey: "name") as! String
         let description = (jsonEvents as AnyObject).object(forKey: "description") as! String
         let requirement = (jsonEvents as AnyObject).object(forKey: "requirement") as! String
-      
+        var icon : String = ""
+        if(jsonEvents as AnyObject).object(forKey: "icon") != nil{
+            icon = (jsonEvents as AnyObject).object(forKey: "icon") as! String
+            let newAchievement : Achievement = Achievement(id: id, name: name, description: description, requirement: requirement, icon: icon)
+            return newAchievement
+        }
         let newAchievement : Achievement = Achievement(id: id, name: name, description: description, requirement: requirement)
         return newAchievement
     }

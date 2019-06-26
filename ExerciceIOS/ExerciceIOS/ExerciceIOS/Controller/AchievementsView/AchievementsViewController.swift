@@ -65,6 +65,12 @@ extension AchievementsViewController: UITableViewDataSource, UITableViewDelegate
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let achievementView : AchievementViewController = AchievementViewController()
+        achievementView.achievement = self.achievements[indexPath.row]
+        self.navigationController?.pushViewController(achievementView, animated: true)
+    }
 
     
     //Refresh tableview after result webservice

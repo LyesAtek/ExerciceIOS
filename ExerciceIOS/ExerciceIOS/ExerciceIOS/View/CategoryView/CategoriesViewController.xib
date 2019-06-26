@@ -21,20 +21,27 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-Tv-2OL">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-Tv-2OL">
                     <rect key="frame" x="20" y="130" width="374" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-El-hHn">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LaV-El-hHn">
                     <rect key="frame" x="20" y="198" width="374" height="653"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LaV-El-hHn" secondAttribute="trailing" constant="20" id="7Kj-8N-bsQ"/>
+                <constraint firstItem="LaV-El-hHn" firstAttribute="top" secondItem="y8w-Tv-2OL" secondAttribute="bottom" constant="47" id="F6n-xs-GfR"/>
+                <constraint firstItem="y8w-Tv-2OL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="86" id="Jw7-9I-rEq"/>
+                <constraint firstItem="y8w-Tv-2OL" firstAttribute="trailing" secondItem="LaV-El-hHn" secondAttribute="trailing" id="duh-3h-qmO"/>
+                <constraint firstItem="LaV-El-hHn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eEi-Bj-zUr"/>
+                <constraint firstItem="y8w-Tv-2OL" firstAttribute="leading" secondItem="LaV-El-hHn" secondAttribute="leading" id="ig7-8k-DbU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LaV-El-hHn" secondAttribute="bottom" constant="11" id="u2e-QM-xP0"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="191.51785714285714"/>
         </view>
