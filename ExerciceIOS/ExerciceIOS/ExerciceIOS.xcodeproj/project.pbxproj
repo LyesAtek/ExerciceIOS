@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		668A2D9B22C3A77D00E9540F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2D9A22C3A77D00E9540F /* AppDelegate.swift */; };
-		668A2DA322C3A77D00E9540F /* ExerciceIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DA122C3A77D00E9540F /* ExerciceIOS.xcdatamodeld */; };
 		668A2DA522C3A77E00E9540F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DA422C3A77E00E9540F /* Assets.xcassets */; };
 		668A2DA822C3A77E00E9540F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DA622C3A77E00E9540F /* LaunchScreen.storyboard */; };
 		668A2DB322C3A77E00E9540F /* ExerciceIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DB222C3A77E00E9540F /* ExerciceIOSTests.swift */; };
@@ -57,7 +56,6 @@
 /* Begin PBXFileReference section */
 		668A2D9722C3A77D00E9540F /* ExerciceIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciceIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A2D9A22C3A77D00E9540F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		668A2DA222C3A77D00E9540F /* ExerciceIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciceIOS.xcdatamodel; sourceTree = "<group>"; };
 		668A2DA422C3A77E00E9540F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668A2DA722C3A77E00E9540F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		668A2DA922C3A77E00E9540F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 				668A2DA422C3A77E00E9540F /* Assets.xcassets */,
 				668A2DA622C3A77E00E9540F /* LaunchScreen.storyboard */,
 				668A2DA922C3A77E00E9540F /* Info.plist */,
-				668A2DA122C3A77D00E9540F /* ExerciceIOS.xcdatamodeld */,
 			);
 			path = ExerciceIOS;
 			sourceTree = "<group>";
@@ -433,7 +430,6 @@
 				668A2DD622C3A9AA00E9540F /* Category.swift in Sources */,
 				668A2DE022C3D1B400E9540F /* CategoriesViewController.swift in Sources */,
 				66989DD822C42017004CF113 /* WBAchievement.swift in Sources */,
-				668A2DA322C3A77D00E9540F /* ExerciceIOS.xcdatamodeld in Sources */,
 				668A2DDA22C3BAEE00E9540F /* GuildWars2API.swift in Sources */,
 				66989DE222C42904004CF113 /* AchievementViewController.swift in Sources */,
 				668A2DE822C3DFBA00E9540F /* HomeViewController.swift in Sources */,
@@ -766,19 +762,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		668A2DA122C3A77D00E9540F /* ExerciceIOS.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				668A2DA222C3A77D00E9540F /* ExerciceIOS.xcdatamodel */,
-			);
-			currentVersion = 668A2DA222C3A77D00E9540F /* ExerciceIOS.xcdatamodel */;
-			path = ExerciceIOS.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 668A2D8F22C3A77D00E9540F /* Project object */;
 }
