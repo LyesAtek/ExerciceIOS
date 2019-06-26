@@ -9,12 +9,24 @@
 import Foundation
 
 class Category{
-    var id : String = ""
+    var id : Int = 0
     var name : String = ""
     var description : String = ""
     var order : Int = 0
     var icon : String = ""
-    var achievments : [Achievement] = []
+    var achievments : [Int] = []
+    
+    init(id : Int, name : String,description : String,order: Int,icon: String, achievement : [Int]) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.order = order
+        self.icon = icon
+        self.achievments = achievement
+    }
+    init(){
+        
+    }
     
 }
 

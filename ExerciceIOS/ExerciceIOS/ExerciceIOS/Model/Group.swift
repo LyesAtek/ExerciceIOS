@@ -14,8 +14,24 @@ class Group{
     var name : String = ""
     var description : String = ""
     var order : Int = 0
-    var categories : [Category]
     
+    //ID Array category model for group
+    var categories : [Int] = []
+    
+    init(id : String) {
+        self.id = id
+    }
+    
+    init(id : String, name : String,description : String,order: Int, categories : [Int]) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.order = order
+        self.categories = categories
+    }
+    init(){
+        
+    }
     
 }
 

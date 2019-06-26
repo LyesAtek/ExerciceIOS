@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		668A2D9B22C3A77D00E9540F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2D9A22C3A77D00E9540F /* AppDelegate.swift */; };
-		668A2D9D22C3A77D00E9540F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2D9C22C3A77D00E9540F /* ViewController.swift */; };
-		668A2DA022C3A77D00E9540F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668A2D9E22C3A77D00E9540F /* Main.storyboard */; };
 		668A2DA322C3A77D00E9540F /* ExerciceIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DA122C3A77D00E9540F /* ExerciceIOS.xcdatamodeld */; };
 		668A2DA522C3A77E00E9540F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DA422C3A77E00E9540F /* Assets.xcassets */; };
 		668A2DA822C3A77E00E9540F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DA622C3A77E00E9540F /* LaunchScreen.storyboard */; };
 		668A2DB322C3A77E00E9540F /* ExerciceIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DB222C3A77E00E9540F /* ExerciceIOSTests.swift */; };
 		668A2DBE22C3A77E00E9540F /* ExerciceIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DBD22C3A77E00E9540F /* ExerciceIOSUITests.swift */; };
+		668A2DD422C3A91500E9540F /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DD322C3A91500E9540F /* Group.swift */; };
+		668A2DD622C3A9AA00E9540F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DD522C3A9AA00E9540F /* Category.swift */; };
+		668A2DD822C3AB8E00E9540F /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DD722C3AB8E00E9540F /* Achievement.swift */; };
+		668A2DDA22C3BAEE00E9540F /* GuildWars2API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DD922C3BAEE00E9540F /* GuildWars2API.swift */; };
+		668A2DDC22C3BB5100E9540F /* WBGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DDB22C3BB5100E9540F /* WBGroup.swift */; };
+		668A2DDE22C3D1A000E9540F /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DDD22C3D1A000E9540F /* CategoriesViewController.xib */; };
+		668A2DE022C3D1B400E9540F /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DDF22C3D1B400E9540F /* CategoriesViewController.swift */; };
+		668A2DE322C3D87A00E9540F /* CustomHomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DE222C3D87A00E9540F /* CustomHomeTableViewCell.xib */; };
+		668A2DE622C3D92F00E9540F /* CustomHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DE522C3D92F00E9540F /* CustomHomeTableViewCell.swift */; };
+		668A2DE822C3DFBA00E9540F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DE722C3DFBA00E9540F /* HomeViewController.swift */; };
+		668A2DEA22C3E09900E9540F /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DE922C3E09900E9540F /* HomeViewController.xib */; };
+		668A2DED22C3F05200E9540F /* WBCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DEC22C3F05200E9540F /* WBCategory.swift */; };
+		668A2DF122C3F0DF00E9540F /* CustomCategoriesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 668A2DF022C3F0DF00E9540F /* CustomCategoriesTableViewCell.xib */; };
+		668A2DF322C3F0F600E9540F /* CustomCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668A2DF222C3F0F600E9540F /* CustomCategoriesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +49,6 @@
 /* Begin PBXFileReference section */
 		668A2D9722C3A77D00E9540F /* ExerciceIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExerciceIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A2D9A22C3A77D00E9540F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		668A2D9C22C3A77D00E9540F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		668A2D9F22C3A77D00E9540F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		668A2DA222C3A77D00E9540F /* ExerciceIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExerciceIOS.xcdatamodel; sourceTree = "<group>"; };
 		668A2DA422C3A77E00E9540F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		668A2DA722C3A77E00E9540F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,20 @@
 		668A2DB922C3A77E00E9540F /* ExerciceIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExerciceIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		668A2DBD22C3A77E00E9540F /* ExerciceIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciceIOSUITests.swift; sourceTree = "<group>"; };
 		668A2DBF22C3A77E00E9540F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		668A2DD322C3A91500E9540F /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		668A2DD522C3A9AA00E9540F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		668A2DD722C3AB8E00E9540F /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		668A2DD922C3BAEE00E9540F /* GuildWars2API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuildWars2API.swift; sourceTree = "<group>"; };
+		668A2DDB22C3BB5100E9540F /* WBGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBGroup.swift; sourceTree = "<group>"; };
+		668A2DDD22C3D1A000E9540F /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		668A2DDF22C3D1B400E9540F /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		668A2DE222C3D87A00E9540F /* CustomHomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHomeTableViewCell.xib; sourceTree = "<group>"; };
+		668A2DE522C3D92F00E9540F /* CustomHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHomeTableViewCell.swift; sourceTree = "<group>"; };
+		668A2DE722C3DFBA00E9540F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		668A2DE922C3E09900E9540F /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		668A2DEC22C3F05200E9540F /* WBCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBCategory.swift; sourceTree = "<group>"; };
+		668A2DF022C3F0DF00E9540F /* CustomCategoriesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCategoriesTableViewCell.xib; sourceTree = "<group>"; };
+		668A2DF222C3F0F600E9540F /* CustomCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCategoriesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +123,12 @@
 		668A2D9922C3A77D00E9540F /* ExerciceIOS */ = {
 			isa = PBXGroup;
 			children = (
+				668A2DEE22C3F06F00E9540F /* Utils */,
+				668A2DCE22C3A82700E9540F /* WebService */,
+				668A2DCD22C3A82300E9540F /* Controller */,
+				668A2DCC22C3A81F00E9540F /* View */,
+				668A2DCB22C3A81900E9540F /* Model */,
 				668A2D9A22C3A77D00E9540F /* AppDelegate.swift */,
-				668A2D9C22C3A77D00E9540F /* ViewController.swift */,
-				668A2D9E22C3A77D00E9540F /* Main.storyboard */,
 				668A2DA422C3A77E00E9540F /* Assets.xcassets */,
 				668A2DA622C3A77E00E9540F /* LaunchScreen.storyboard */,
 				668A2DA922C3A77E00E9540F /* Info.plist */,
@@ -126,6 +153,87 @@
 				668A2DBF22C3A77E00E9540F /* Info.plist */,
 			);
 			path = ExerciceIOSUITests;
+			sourceTree = "<group>";
+		};
+		668A2DCB22C3A81900E9540F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DD322C3A91500E9540F /* Group.swift */,
+				668A2DD522C3A9AA00E9540F /* Category.swift */,
+				668A2DD722C3AB8E00E9540F /* Achievement.swift */,
+				668A2DD922C3BAEE00E9540F /* GuildWars2API.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		668A2DCC22C3A81F00E9540F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DE422C3D88300E9540F /* HomeView */,
+				668A2DEF22C3F0B900E9540F /* CategoryView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		668A2DCD22C3A82300E9540F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DE122C3D45800E9540F /* HomeView */,
+				668A2DEB22C3EFF500E9540F /* CategoriesView */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		668A2DCE22C3A82700E9540F /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DDB22C3BB5100E9540F /* WBGroup.swift */,
+				668A2DEC22C3F05200E9540F /* WBCategory.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		668A2DE122C3D45800E9540F /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DE522C3D92F00E9540F /* CustomHomeTableViewCell.swift */,
+				668A2DE722C3DFBA00E9540F /* HomeViewController.swift */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		668A2DE422C3D88300E9540F /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DE922C3E09900E9540F /* HomeViewController.xib */,
+				668A2DE222C3D87A00E9540F /* CustomHomeTableViewCell.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		668A2DEB22C3EFF500E9540F /* CategoriesView */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DDF22C3D1B400E9540F /* CategoriesViewController.swift */,
+				668A2DF222C3F0F600E9540F /* CustomCategoriesTableViewCell.swift */,
+			);
+			path = CategoriesView;
+			sourceTree = "<group>";
+		};
+		668A2DEE22C3F06F00E9540F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		668A2DEF22C3F0B900E9540F /* CategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				668A2DDD22C3D1A000E9540F /* CategoriesViewController.xib */,
+				668A2DF022C3F0DF00E9540F /* CustomCategoriesTableViewCell.xib */,
+			);
+			path = CategoryView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +342,10 @@
 			files = (
 				668A2DA822C3A77E00E9540F /* LaunchScreen.storyboard in Resources */,
 				668A2DA522C3A77E00E9540F /* Assets.xcassets in Resources */,
-				668A2DA022C3A77D00E9540F /* Main.storyboard in Resources */,
+				668A2DF122C3F0DF00E9540F /* CustomCategoriesTableViewCell.xib in Resources */,
+				668A2DEA22C3E09900E9540F /* HomeViewController.xib in Resources */,
+				668A2DE322C3D87A00E9540F /* CustomHomeTableViewCell.xib in Resources */,
+				668A2DDE22C3D1A000E9540F /* CategoriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +370,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				668A2D9D22C3A77D00E9540F /* ViewController.swift in Sources */,
 				668A2D9B22C3A77D00E9540F /* AppDelegate.swift in Sources */,
+				668A2DD622C3A9AA00E9540F /* Category.swift in Sources */,
+				668A2DE022C3D1B400E9540F /* CategoriesViewController.swift in Sources */,
 				668A2DA322C3A77D00E9540F /* ExerciceIOS.xcdatamodeld in Sources */,
+				668A2DDA22C3BAEE00E9540F /* GuildWars2API.swift in Sources */,
+				668A2DE822C3DFBA00E9540F /* HomeViewController.swift in Sources */,
+				668A2DF322C3F0F600E9540F /* CustomCategoriesTableViewCell.swift in Sources */,
+				668A2DED22C3F05200E9540F /* WBCategory.swift in Sources */,
+				668A2DD422C3A91500E9540F /* Group.swift in Sources */,
+				668A2DDC22C3BB5100E9540F /* WBGroup.swift in Sources */,
+				668A2DD822C3AB8E00E9540F /* Achievement.swift in Sources */,
+				668A2DE622C3D92F00E9540F /* CustomHomeTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +417,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		668A2D9E22C3A77D00E9540F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				668A2D9F22C3A77D00E9540F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		668A2DA622C3A77E00E9540F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

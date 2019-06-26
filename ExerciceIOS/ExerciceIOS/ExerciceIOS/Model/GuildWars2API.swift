@@ -10,5 +10,5 @@ import Foundation
 
 class GuildWars2API{
     
-     static let baseUrl = "https://api.guildwars2.com/v2/"
+     static let baseUrl = "https://api.guildwars2.com"
 }
