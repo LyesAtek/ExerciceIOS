@@ -9,9 +9,22 @@
 import Foundation
 
 class Achievement{
-    var id : String = ""
+    var id : Int = 0
     var name : String = ""
     var description : String = ""
     var requirement : String = ""
+    
+    init(id : Int, name : String,description : String, requirement : String) {
+        self.id = id
+        self.name = name
+        self.description = description
+        self.requirement = requirement
+       
+    }
+    
+    init(){
+        
+    }
+    
 
 }

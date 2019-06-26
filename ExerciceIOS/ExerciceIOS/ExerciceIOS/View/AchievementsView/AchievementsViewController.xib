@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchievementsViewController" customModule="ExerciceIOS" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="OHS-vO-T5r" id="sJM-FV-O3o"/>
                 <outlet property="view" destination="iN0-l3-epB" id="S6y-ks-1O5"/>
             </connections>
         </placeholder>

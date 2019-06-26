@@ -21,8 +21,8 @@
                     <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIo-5o-d1B">
                         <rect key="frame" x="14" y="1" width="106" height="103.5"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="103.5" id="Fxg-0m-6TK"/>
-                            <constraint firstAttribute="width" constant="106" id="Uf6-lN-Fh2"/>
+                            <constraint firstAttribute="width" constant="106" id="Nzz-cR-SKa"/>
+                            <constraint firstAttribute="height" constant="103.5" id="fNi-DO-3CW"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UxQ-Ol-hm4">
@@ -37,6 +37,7 @@
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="UxQ-Ol-hm4" secondAttribute="trailing" id="DIS-QG-R8A"/>
                     <constraint firstItem="UxQ-Ol-hm4" firstAttribute="leading" secondItem="zIo-5o-d1B" secondAttribute="trailing" constant="8" symbolic="YES" id="KX9-S7-QQ1"/>
                     <constraint firstItem="zIo-5o-d1B" firstAttribute="leading" secondItem="vqg-bp-V8B" secondAttribute="leadingMargin" constant="-6" id="N8O-cQ-c68"/>
                     <constraint firstItem="zIo-5o-d1B" firstAttribute="centerY" secondItem="vqg-bp-V8B" secondAttribute="centerY" id="Pro-IA-f7g"/>

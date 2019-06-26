@@ -9,7 +9,7 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
-     let waitingTaskFinishes = DispatchGroup()
+    let waitingTaskFinishes = DispatchGroup()
     var group : Group = Group()
     var categories : [Category] = []
     var cellReuseIdentifier : String = "CategoryTableViewCell"
@@ -59,7 +59,7 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
         cell.iconCategory?.dowloadFromServer( imageView: cell.iconCategory,link:categories[indexPath.row].icon, contentMode: .scaleAspectFill)
         cell.nameCategory.text = " Name : " + categories[indexPath.row].name
             
-         //   cell.descriptionCategory.text = " Description : " + categories[indexPath.row].description
+     
         
         return cell
     }
@@ -68,7 +68,13 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
         return group.categories.count
     }
     
-   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        let achievementsView : AchievementsViewController = AchievementsViewController()
+        achievementsView.category = self.categories[indexPath.row]
+        self.navigationController?.pushViewController(achievementsView, animated: true)
+    }
+    
     
     //Refresh tableview after result webservice
     func refresh(){
