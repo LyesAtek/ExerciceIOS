@@ -9,6 +9,7 @@
 import UIKit
 
 class CategoriesViewController: UIViewController {
+     let waitingTaskFinishes = DispatchGroup()
     var group : Group = Group()
     var categories : [Category] = []
     var cellReuseIdentifier : String = "CategoryTableViewCell"
@@ -26,9 +27,14 @@ class CategoriesViewController: UIViewController {
     }
 
     func getDetailByCategoriesIds(){
+      
         for id in group.categories{
+            waitingTaskFinishes.enter()
             getCategory(id: String(id))
         }
+        waitingTaskFinishes.notify(queue: DispatchQueue.main, work: DispatchWorkItem(block: {
+           self.refresh()
+        }))
     }
     
     func  getCategory(id : String){
@@ -36,7 +42,7 @@ class CategoriesViewController: UIViewController {
         wb.getCategoryById(id: id){
             (result : Category) in
             self.categories.append(result)
-            self.refresh()
+            self.waitingTaskFinishes.leave()
         }
     }
 
@@ -46,11 +52,15 @@ class CategoriesViewController: UIViewController {
 extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Waiting until the task finishes
+        waitingTaskFinishes.wait()
         let cell : CustomCategoriesTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier , for: indexPath) as! CustomCategoriesTableViewCell
-        if categories.count == group.categories.count{
-            cell.nameCategory.text = " Name : " + categories[indexPath.row].name
+        
+        cell.iconCategory?.dowloadFromServer( imageView: cell.iconCategory,link:categories[indexPath.row].icon, contentMode: .scaleAspectFill)
+        cell.nameCategory.text = " Name : " + categories[indexPath.row].name
+            
          //   cell.descriptionCategory.text = " Description : " + categories[indexPath.row].description
-        }
+        
         return cell
     }
     

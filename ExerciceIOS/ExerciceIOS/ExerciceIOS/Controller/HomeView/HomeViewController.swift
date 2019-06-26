@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    let waitingTaskFinishes = DispatchGroup()
     
     @IBOutlet weak var tableView: UITableView!
     var tableDataIdGroup : [String] = []
@@ -38,6 +39,7 @@ class HomeViewController: UIViewController {
     }
     
     func getDetailByGroupsIds(){
+        waitingTaskFinishes.enter()
         for id in tableDataIdGroup{
             getGroup(id: id)
         }
@@ -48,7 +50,12 @@ class HomeViewController: UIViewController {
         wb.getGroupById(id: id){
             (result : Group) in
             self.groups.append(result)
-            self.refresh()
+            //If number of Groups Ids is equal number of groups object, we can leave dispatch group
+            if self.groups.count == self.tableDataIdGroup.count{
+                self.waitingTaskFinishes.leave()
+                self.refresh()
+            }
+            
         }
     }
     
@@ -57,11 +64,13 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        // Waiting until the task finishes
+        waitingTaskFinishes.wait()
         let cell : CustomHomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier , for: indexPath) as! CustomHomeTableViewCell
-        if groups.count > 1{
+        
+      
             cell.nameLabel.text = " Name : " + groups[indexPath.row].name
             cell.descriptionLabel.text = " Description : " + groups[indexPath.row].description
-        }
         return cell
     }
     
